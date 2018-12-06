@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+ >
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/logo4"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="382dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="156dp"
+        android:text="Log in"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/bntjoin"
+        android:layout_width="382dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="108dp"
+        android:text="Join Now!!"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:layout_width="382dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="244dp"
+        android:text="About Us"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/btnServices"
+        android:layout_width="382dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="200dp"
+        android:text="Our Services"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ViewFlipper
+
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="316dp"
+        android:outAnimation="@android:anim/fade_in"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+
+        android:id="@+id/movingtext"
+        android:layout_width="380dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_flipper"
+
+        android:layout_marginTop="516dp"
+        android:fadingEdge="horizontal"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="call:013 656 9222"
+        android:textAlignment="center"
+        android:textColor="#ff4500"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+
+    <TextView
+
+        android:id="@+id/watsapptext"
+        android:layout_width="380dp"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/movingtext"
+
+        android:layout_marginTop="540dp"
+        android:fadingEdge="horizontal"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="WatsApp:063 7621 4820"
+        android:textAlignment="center"
+        android:textColor="#ff4500"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>
